@@ -12,11 +12,26 @@ links.forEach(function (link) {
 })
 */
 
-let celdas = document.querySelectorAll("td");
+/*
+// De esta forma evitamos el evento por defecto
+let closes = document.querySelectorAll(".close");
 
-celdas.forEach(function (td) {
-   td.addEventListener('click', function(){
+closes.forEach(function (close) {
+    close.addEventListener('click', function(evento){
 
-   })
+        evento.preventDefault();
+       return false;
+       
+        
+    });
+});
+*/
+
+// De esta forma removemos clases
+let iconos = querySelectorAll("i");
+
+iconos.forEach(function (icono) {
+    
+    icono.classList.remove("fa-star");
 })
 
